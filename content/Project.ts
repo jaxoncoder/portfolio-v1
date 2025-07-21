@@ -1,0 +1,68 @@
+const Project = [
+    {
+        id: "5",
+        title: "SWOM Swap Your Home",
+        slug: "SWOM Swap Your Home",
+        image: '/images/Projects/swom.png',
+        technology: "TypeScript, Next.js, Tailwind CSS",
+        preview_url: "https://swom.travel/en",
+        short_description: "Swom is a members-only global travel community where you can exchange homes for free. Travel, work, or have fun without rent, hidden fees, or hassle. Make memories worldwide!",
+    },
+    {
+        id: "4",
+        title: "CuteToInsane",
+        slug: "CuteToInsane",
+        image: '/images/Projects/cute.png',
+        technology: "TypeScript, Next.js, Tailwind CSS",
+        preview_url: "https://cutetoinsane.online",
+        short_description: "CuteToInsane is a website specializing in blockchain NFT minting, focusing on mouse-themed NFTs for gaming. It features an exceptional UI and offers an amazing design, ensuring a seamless experience for minting and trading digital assets.",
+    },
+    {
+        id: "1",
+        title: "Maki Nishikino",
+        slug: "Maki Nishikino",
+        image: '/images/Projects/maki.png',
+        technology: "React, Tailwind CSS, TypeScript",
+        preview_url: "https://maki-me.vercel.app",
+        short_description: "Promising a melodious and potentially rewarding investment journey",
+    },
+    {
+        id: "7",
+        title: "TriggerX",
+        slug: "TriggerX",
+        image: '/images/Projects/triggerX.png',
+        technology: "Next.js, prismaORM, postgresql, Typescript, Tailwind, zustand, xyflow, React-hook-form",
+        preview_url: "https://trigger-x-puce.vercel.app",
+        short_description: "TriggerX is a workflow automation platform like Zapier, streamlining tasks, boosting productivity, and integrating essential tools.",
+    },
+    {
+        id: "3",
+        title: "Gama Dent",
+        slug: "Gama Dent",
+        image: '/images/Projects/gama.png',
+        technology: "React, Tailwind CSS, TypeScript",
+        preview_url: "https://gama-dental.vercel.app",
+        short_description: "Gama Dental offers features tailored to dental care or products, presented in an interactive manner due to its React-based development.",
+    },
+    {
+        id: "2",
+        title: "Kokomi Teruhashi",
+        slug: "Kokomi Teruhashi",
+        image: '/images/Projects/kokomi.png',
+        technology: "React, SCSS",
+        preview_url: "https://kokomi-me.vercel.app",
+        short_description: "Promising a melodious and potentially rewarding investment journey",
+    },
+    {
+        id: "6",
+        title: "Zomato-Clone",
+        slug: "Zomato-Clone",
+        image: '/images/Projects/zomato.png',
+        technology: "React, Node.js, TypeScript",
+        preview_url: "https://zomato-clone-jayrajrodage.vercel.app",
+        short_description: "Designed a Zomato-inspired food delivery platform, offering users seamless food discovery, ordering, and payment experiences, while simplifying restaurant management for owners.",
+    },
+
+];
+
+export default Project;
