@@ -94,7 +94,7 @@ export default function Footer({
         {/* Copyright & Developed By */}
         <motion.div variants={opacityVariant} className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-5">
           <div>
-            <p className="order-1 text-base">&copy; {new Date().getFullYear()} Naoki Sora</p>
+            <p className="order-1 text-base">&copy; {new Date().getFullYear()} Daichi Saito</p>
           </div>
           <div className="text-start md:text-right">
             <span>Developed by </span>
@@ -105,7 +105,7 @@ export default function Footer({
               href="https://www.linkedin.com/in/daveescott0509"
               className="font-semibold hover:underline"
             >
-              Naoki Sora
+              Daichi Saito
             </Link>
           </div>
         </motion.div>

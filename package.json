@@ -1,6 +1,6 @@
 {
-  "name": "naoki-sora-portfolio",
-  "homepage": "https://naoki-sora.com",
+  "name": "daichi-saito-portfolio",
+  "homepage": "https://daichi-saito.com",
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
@@ -67,13 +67,13 @@
     "@mdx-js/mdx": "2.3.0",
     "@mdx-js/react": "2.3.0"
   },
-      "description": "Frontend Application of Naoki Sora's Portfolio",
+  "description": "Frontend Application of Daichi Saito's Portfolio",
   "main": "server.js",
   "directories": {
     "lib": "lib"
   },
   "keywords": [
-    "naoki-sora.com",
+    "daichi-saito.com",
     "daveescott",
     "davee",
     "portfolio",
@@ -81,5 +81,5 @@
     "blog",
     "application"
   ],
-      "author": "Naoki Sora"
+  "author": "Daichi Saito"
 }

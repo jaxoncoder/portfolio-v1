@@ -17,8 +17,8 @@ app
 
       // Add your allowed hosts here
       const allowedHosts = [
-          'https://www.naoki-sora.com',
-  'https://naoki-sora.com',
+        'https://www.daichi-saito.com',
+        'https://daichi-saito.com',
         'https://postimg.cc',
         'https://i.postimg.cc',
         'https://drive.google.com'

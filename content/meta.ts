@@ -6,10 +6,10 @@ const blogImage = "https://i.postimg.cc/dVQkjgxp/blog.png"
 
 const pageMeta: PageMeta = {
   home: {
-    title: "Naoki Sora",
-    description: "Hey, I am Naoki Sora. I'm a Full Stack & Blockchain Developer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
+    title: "Daichi Saito",
+    description: "Hey, I am Daichi Saito. I'm a Full Stack & Blockchain Developer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
     image: myImage,
-    keywords: "Naoki Sora's Portfolio, naoki's blog, top blog sites, top 10 blog sites, best blog sites, best portfolio template, best programming blogs",
+    keywords: "Daichi Saito's Portfolio, daichi's blog, top blog sites, top 10 blog sites, best blog sites, best portfolio template, best programming blogs",
   },
 
 
@@ -17,7 +17,7 @@ const pageMeta: PageMeta = {
     title: "Blogs",
     description: "Here, you will find a collection of insightful and informative articles that I have written on various topics. As a passionate writer and avid learner, I believe in the power of sharing knowledge and experiences through the written word.",
     image: blogImage,
-    keywords: "naoki sora blog, naoki blog, blog, webdev, react, react blog application, django blog applicaiton, programming blogs, top 10 programming blogs, top programming blogs",
+    keywords: "daichi saito blog, daichi blog, blog, webdev, react, react blog application, django blog applicaiton, programming blogs, top 10 programming blogs, top programming blogs",
   },
 
   projects: {
@@ -28,22 +28,22 @@ const pageMeta: PageMeta = {
   },
   about: {
     title: "About",
-    description: "Hey, I am Naoki Sora. Experienced professional Full Stack & Blockchain Developer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
+    description: "Hey, I am Daichi Saito. Experienced professional Full Stack & Blockchain Developer who enjoys developing innovative software solutions that are tailored to customer desirability and usability.",
     image: myImage,
-    keywords: "about, about me, about naoki, who is naoki, sora, about sora, portfolio about page",
+    keywords: "about, about me, about daichi, who is daichi, saito, about saito, portfolio about page",
   },
 
   contact: {
     title: "Contact",
     description: "Do you have something on your mind that you'd like to discuss? Whether it's work-related or simply a casual conversation, I'm here and eager to lend an ear. Please don't hesitate to get in touch with me at any time.",
     image: myImage,
-    keywords: "contact, contact page, naoki sora contact, contact naoki",
+    keywords: "contact, contact page, daichi saito contact, contact daichi",
   },
   snippets: {
     title: "Snippets",
     description: "These are a collection of snippets I've used in the past and saved. These could be useful to you as well.",
     image: myImage,
-    keywords: "Code, Code Snippets, Snippets, naoki sora code snippets, naoki code snippets, snippets code, naoki snippets, naoki sora snippets",
+    keywords: "Code, Code Snippets, Snippets, daichi saito code snippets, daichi code snippets, snippets code, daichi snippets, daichi saito snippets",
   },
 }
 

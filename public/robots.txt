@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://naoki-sora.com/sitemap.xml
+Sitemap: https://daichi-saito.com/sitemap.xml

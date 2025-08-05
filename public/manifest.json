@@ -4,8 +4,8 @@
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
-  "name": "Naoki Sora Portfolio",
-  "short_name": "Naoki Sora",
+  "name": "Daichi Saito Portfolio",
+  "short_name": "Daichi Saito",
   "description": "This is my portfolio application which you can install as a Progressive Web app.",
   "icons": [
     {

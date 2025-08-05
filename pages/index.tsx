@@ -1,9 +1,10 @@
 // Page Components START
 import Metadata from '@components/MetaData'
-import { FadeContainer, headingFromLeft, opacityVariant } from '@content/FramerMotionVariants'
+import { FadeContainer, headingFromLeft, opacityVariant, popUp } from '@content/FramerMotionVariants'
 import AnimatedHeading from '@components/FramerMotion/AnimatedHeading'
 import getRSS from '@lib/generateRSS'
 import generateSitemap from '@lib/sitemap'
+import { homeProfileImage } from '@utils/utils'
 import { motion } from 'framer-motion'
 import { FiDownload } from 'react-icons/fi'
 import pageMeta from '@content/meta'
@@ -19,6 +20,7 @@ import NoData from "@components/NoData"
 import Experience from '@content/Experience';
 import BlogsData from '@content/Blogs';
 import dynamic from 'next/dynamic'
+import Image from 'next/image'
 
 const ExperienceSection = dynamic(() => import('@components/Home/ExperienceSection'), {
   loading: () => <Loader />,
@@ -59,7 +61,7 @@ export default function Home() {
   return (
     <>
       <Metadata
-        title="Naoki Sora's Portfolio"
+        title="Daichi Saito's Portfolio"
         description={pageMeta.home.description}
         previewImage={pageMeta.home.image}
         keywords={pageMeta.home.keywords}
@@ -73,7 +75,19 @@ export default function Home() {
           className="grid min-h-screen py-20 place-content-center"
         >
           <div className="relative flex flex-col items-center w-full gap-10 mx-auto">
-
+            <motion.div
+              variants={popUp}
+              className="relative flex items-center justify-center p-3 rounded-full overflow-hidden w-44 h-44 xs:w-64 xs:h-64 before:absolute before:inset-0 before:border-t-4 before:border-b-4 before:border-black before:dark:border-white before:rounded-full before:animate-photo-spin"
+            >
+              <Image
+                src={profileInfo?.image || homeProfileImage}
+                className="rounded-full shadow filter"
+                width={933}
+                height={933}
+                alt="Davee Scott's Profile Image"
+                quality={60}
+              />
+            </motion.div>
 
             <div className="flex flex-col w-full gap-3 p-5 text-center select-none">
               <div className="flex flex-col gap-1">

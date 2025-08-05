@@ -94,7 +94,7 @@ export default function TopNavbar() {
             // className="font-sarina"
             className="font-bold"
           >
-            naoki-sora.com
+            daichi-saito.com
           </motion.p>
         </div>
       </Link>
@@ -137,11 +137,10 @@ function NavItem({ href, text }: { href: string; text: string }) {
   const isActive = router.asPath === (href === "/home" ? "/" : href) || router.asPath.startsWith(href)
   return (
     <Link
-      className={`${
-        isActive
-          ? "font-bold text-teal-700 dark:text-teal-400"
-          : " text-gray-600 dark:text-gray-300"
-      } sm:inline-block transition-all text-[17px] hidden px-2 md:px-3 py-[3px] hover:bg-black/10  dark:hover:bg-neutral-700/50 rounded-md`}
+      className={`${isActive
+        ? "font-bold text-teal-700 dark:text-teal-400"
+        : " text-gray-600 dark:text-gray-300"
+        } sm:inline-block transition-all text-[17px] hidden px-2 md:px-3 py-[3px] hover:bg-black/10  dark:hover:bg-neutral-700/50 rounded-md`}
       href={href === "/home" ? "/" : href}
     >
       <motion.p className="capitalize" variants={popUp}>

@@ -31,7 +31,7 @@ export default function Form() {
     }
 
     const emailData = {
-      to_name: "Naoki Sora",
+      to_name: "Daichi Saito",
       first_name: target.first_name.value.trim(),
       last_name: target.last_name.value.trim(),
       email: target.email.value.trim(),

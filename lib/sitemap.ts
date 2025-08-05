@@ -13,22 +13,22 @@ export default async function generate() {
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
     <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
         ${pages
-          .map((page) => {
-            const path = page
-              .replace("pages", "")
-              .replace("posts", "/blogs")
-              .replace("snippets", "/snippets")
-              .replace(".tsx", "")
-              .replace(".mdx", "");
-            const route = path === "/index" ? "" : path;
+      .map((page) => {
+        const path = page
+          .replace("pages", "")
+          .replace("posts", "/blogs")
+          .replace("snippets", "/snippets")
+          .replace(".tsx", "")
+          .replace(".mdx", "");
+        const route = path === "/index" ? "" : path;
 
-            return `
+        return `
               <url>
-                  <loc>${`https://naoki-sora.com${route}`}</loc>
+                  <loc>${`https://daichi-saito.com${route}`}</loc>
               </url>
             `;
-          })
-          .join("")}
+      })
+      .join("")}
     </urlset>
     `;
 
