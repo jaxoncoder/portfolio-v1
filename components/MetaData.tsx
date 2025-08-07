@@ -58,14 +58,6 @@ export default function MetaData({
       <meta property="og:site_name" content="Portfolio application of Daichi Saito" />
       <meta property="og:url" content={currentURL} key="ogurl" />
       <meta property="og:image" content={previewImage || '/images/davee.jpg'} />
-      {/* Twitter */}
-      <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:creator" content="@NumanIbnMazid" />
-      <meta name="twitter:title" content={`${title}${suffix ? ` - ${suffix}` : ''} | Daichi Saito`} />
-      <meta name="twitter:description" content={description || "Daichi Saito's Portfolio Application"} />
-      <meta name="twitter:image" content={previewImage || '/images/davee.jpg'} />
-      <meta name="twitter:image:alt" content={title || 'daichi-saito.com'}></meta>
-      <meta name="twitter:domain" content={currentURL} />
     </Head>
   )
 }

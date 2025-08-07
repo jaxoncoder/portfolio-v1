@@ -52,7 +52,7 @@ export function TimelineItem({
                   <a className="p-0 m-0" href={company_url} target="_blank" rel="noreferrer">
                     <Image
                       src={company_image}
-                      className="rounded-full shadow filter"
+                      className="rounded-full shadow filter bg-gray-100"
                       width={35}
                       height={35}
                       alt={company}
