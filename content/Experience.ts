@@ -28,7 +28,7 @@ const Experience = [
         id: 2,
         slug: "Gnosis",
         company: "Gnosis",
-        company_image: "/images/companies/Gnosis.jfif",
+        company_image: "/images/companies/Gnosis.png",
         company_url: "https://gnosis.io/",
         address: "Berlin, Germany",
         designation: "Blockchain Developer",
