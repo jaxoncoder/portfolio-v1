@@ -11,7 +11,6 @@ import { getProjectDetails } from '@lib/backendAPI'
 import AnimatedDiv from '@components/FramerMotion/AnimatedDiv'
 import { opacityVariant } from '@content/FramerMotionVariants'
 import Image from 'next/image'
-import PDFViewer from '@components/PDFViewer'
 import Loader from "@components/Loader"
 import NoData from "@components/NoData"
 import Metadata from '@components/MetaData'
@@ -211,11 +210,6 @@ export default function ProjectDetailsSection({ slug, projectData }: { slug: str
                                   onClick={() => openMediaLightBoxViewer(media)}
                                 />
                               </div>
-                            )}
-
-                            {/* pdf file */}
-                            {media.file !== null && getFileExtensionFromBase64(media.file) === 'pdf' && (
-                              <PDFViewer base64String={media.file} />
                             )}
 
                             {/* Fallback */}

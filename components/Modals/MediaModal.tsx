@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import ReactModal from 'react-modal'
-import PDFViewer from '@components/PDFViewer'
 import Image from 'next/image'
 
 // Set the app element to avoid accessibility warnings
@@ -34,7 +33,7 @@ const MediaModal: React.FC<MediaModalProps> = ({ title, file, description }) => 
     if (file !== null) {
       const fileExtension = getFileExtensionFromBase64(file)
       if (fileExtension === 'pdf') {
-        return <PDFViewer base64String={file} />
+        return <div />
       }
       return <Image src={file} alt={title} className="mb-4" width={1000} height={1000} quality={50} style={{ width: "auto", height: "auto" }} />
     }

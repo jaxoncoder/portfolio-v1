@@ -36,7 +36,6 @@
     "react-dom": "^18.2.0",
     "react-icons": "^4.10.1",
     "react-modal": "^3.16.1",
-    "react-pdf": "^7.1.2",
     "react-qr-code": "^2.0.11",
     "react-ripples": "^2.2.1",
     "react-share": "^4.4.1",
