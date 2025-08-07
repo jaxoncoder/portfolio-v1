@@ -6,7 +6,7 @@ export default function AnimatedDiv({
   className,
   children,
   infinity,
-}: AnimatedTAGProps) {
+}: AnimatedTAGProps | any) {
   return (
     <motion.div
       initial="hidden"

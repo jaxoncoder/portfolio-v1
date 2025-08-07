@@ -47,7 +47,7 @@ export type ProfileType = {
 
 /* Custom Animated Components types */
 export type AnimatedTAGProps = {
-  variants: Variants
+  variants: Variants | any
   className?: string
   children: React.ReactNode
   infinity?: boolean
@@ -376,7 +376,7 @@ export type ViewsType = {
 }
 
 export type LikeStatusType = {
-  liked : boolean
+  liked: boolean
 }
 
 
