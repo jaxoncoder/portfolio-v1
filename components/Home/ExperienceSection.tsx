@@ -7,7 +7,6 @@ import { ExperienceType } from '@lib/types'
 import AnimatedHeading from '@components/FramerMotion/AnimatedHeading'
 import { headingFromLeft } from '@content/FramerMotionVariants'
 import { useRouter } from 'next/router'
-import Link from 'next/link'
 
 export default function ExperienceSection({ experiences, showHomeHeading = true }: { experiences: ExperienceType[], showHomeHeading?: boolean }) {
   const router = useRouter()

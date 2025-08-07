@@ -9,7 +9,7 @@ import readTime from 'reading-time'
 import { AiFillEye, AiFillLike } from 'react-icons/ai'
 
 export default function Blog({ blog, animate = false }: { blog: BlogType; animate?: boolean }) {
-  const blogRef = useRef(null)
+  const blogRef = useRef<HTMLElement>(null);
   const hasCode = blog && blog.content.includes('<code>')
 
   let readingTime = null
@@ -22,11 +22,11 @@ export default function Blog({ blog, animate = false }: { blog: BlogType; animat
       <Link href={`blogs/${blog.slug}`} title="View Blog Details">
         <motion.article
           ref={blogRef}
-          variants={BlogCardAnimation}
-          initial={animate && 'hidden'}
+          variants={BlogCardAnimation as any}
+          initial={animate ? 'hidden' : ''}
           whileInView={animate ? 'visible' : ''}
           viewport={{ once: true }}
-          className="bg-white dark:bg-darkSecondary hover:bg-darkWhite dark:hover:bg-darkFourth ring-1 dark:hover:ring-[#555] ring-gray-300 hover:ring-gray-400 dark:ring-[#444] rounded-2xl p-2 flex flex-col sm:flex-row items-center w-ull sm:w-[95%] mx-auto gap-2 md:gap-7 shadow-md md:shadow-lg"
+          className="bg-white dark:bg-darkSecondary hover:bg-darkWhite dark:hover:bg-darkFourth ring-1 dark:hover:ring-[#555] ring-gray-300 hover:ring-gray-400 dark:ring-[#444] rounded-2xl p-2 flex flex-col sm:flex-row items-center w-full sm:w-[95%] mx-auto gap-2 md:gap-7 shadow-md md:shadow-lg"
         >
           <div className="">
             <Image

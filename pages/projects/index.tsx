@@ -41,7 +41,7 @@ export default function Projects() {
             className="grid min-h-screen py-20 place-content-center"
           >
             <div>
-              <ProjectSection projects={Project} />
+              <ProjectSection projects={Project as any} />
             </div>
           </motion.section>
         </div>

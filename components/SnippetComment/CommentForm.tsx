@@ -145,7 +145,7 @@ export default function CommentForm({ slug, contentURL }: { slug: string; conten
           variants={mobileNavItemSideways}
           className="w-full overflow-hidden rounded-lg shadow-lg sm:max-w-sm"
         >
-          <Ripples className="flex justify-center w-full" color="rgba(225, 225,225,0.2)">
+          <Ripples className="flex justify-center w-full" color="rgba(225, 225,225,0.2)" placeholder={true} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <button
               ref={sendButtonRef}
               type="submit"

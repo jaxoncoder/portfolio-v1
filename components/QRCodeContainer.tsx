@@ -76,6 +76,9 @@ export default function QRCodeContainer({
                 color={
                   isDarkMode ? "rgba(0,0,0, 0.2)" : "rgba(225, 225, 225, 0.2)"
                 }
+                placeholder={true}
+                onPointerEnterCapture={() => {}}
+                onPointerLeaveCapture={() => {}}
               >
                 <button
                   className="w-full px-3 py-2 text-sm font-medium text-white rounded bg-darkPrimary dark:bg-gray-100 dark:text-darkPrimary"

@@ -5,7 +5,7 @@ export default function Step({
   children,
 }: {
   id: string;
-  children?: JSX.Element;
+  children?: React.ReactElement;
 }) {
   return (
     <div

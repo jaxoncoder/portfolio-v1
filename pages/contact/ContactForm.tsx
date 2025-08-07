@@ -201,6 +201,9 @@ export default function Form() {
           <Ripples
             className="flex justify-center w-full"
             color="rgba(225, 225,225,0.2)"
+            placeholder={true} 
+            onPointerEnterCapture={() => { }} 
+            onPointerLeaveCapture={() => { }}
           >
             <button
               ref={sendButtonRef}

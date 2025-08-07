@@ -86,12 +86,12 @@ export default function CommentForm({ slug, contentURL }: { slug: string; conten
         ref={formRef}
         initial="hidden"
         whileInView="visible"
-        variants={FadeContainer}
+        variants={FadeContainer as any}
         viewport={{ once: true }}
         className="flex flex-col items-center w-full max-w-xl mx-auto dark:text-gray-300"
-        onSubmit={addComment}
+        onSubmit={(e:any) => addComment(e as any)}
       >
-        <motion.div variants={mobileNavItemSideways} className="relative z-0 w-full mb-6 group">
+        <motion.div variants={mobileNavItemSideways as any} className="relative z-0 w-full mb-6 group">
           <input
             type="text"
             name="name"
@@ -108,7 +108,7 @@ export default function CommentForm({ slug, contentURL }: { slug: string; conten
           </label>
         </motion.div>
 
-        <motion.div variants={mobileNavItemSideways} className="relative z-0 w-full mb-6 group">
+        <motion.div variants={mobileNavItemSideways as any} className="relative z-0 w-full mb-6 group">
           <input
             type="email"
             name="email"
@@ -125,7 +125,7 @@ export default function CommentForm({ slug, contentURL }: { slug: string; conten
           </label>
         </motion.div>
 
-        <motion.div variants={mobileNavItemSideways} className="relative z-0 w-full mb-6 group">
+        <motion.div variants={mobileNavItemSideways as any} className="relative z-0 w-full mb-6 group">
           <textarea
             name="comment"
             id="floating_comment"
@@ -142,10 +142,10 @@ export default function CommentForm({ slug, contentURL }: { slug: string; conten
         </motion.div>
 
         <motion.div
-          variants={mobileNavItemSideways}
+          variants={mobileNavItemSideways as any      }
           className="w-full overflow-hidden rounded-lg shadow-lg sm:max-w-sm"
         >
-          <Ripples className="flex justify-center w-full" color="rgba(225, 225,225,0.2)">
+          <Ripples className="flex justify-center w-full" color="rgba(225, 225,225,0.2)" placeholder={true} onPointerEnterCapture={() => {}} onPointerLeaveCapture={() => {}}>
             <button
               ref={sendButtonRef}
               type="submit"

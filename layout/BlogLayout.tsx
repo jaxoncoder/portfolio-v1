@@ -1,7 +1,4 @@
 import Image from 'next/image'
-import ShareOnSocialMedia from '../components/ShareOnSocialMedia'
-import { FiPrinter } from 'react-icons/fi'
-import useWindowLocation from '@hooks/useWindowLocation'
 import ScrollProgressBar from '@components/ScrollProgressBar'
 import { useState, useEffect } from 'react'
 import { opacityVariant, popUp } from '@content/FramerMotionVariants'
@@ -27,7 +24,6 @@ export default function BlogLayout({
   blog: BlogType
   profileInfo: ProfileType
 }) {
-  const { currentURL } = useWindowLocation()
   const [isTOCActive, setIsTOCActive] = useState(false)
   const hasCode = blog && blog.content.includes('<code>')
   const size = useWindowSize()
@@ -55,64 +51,6 @@ export default function BlogLayout({
   let readingTime = null
   if (!hasCode) {
     readingTime = readTime(blog.content)
-  }
-
-  function adjustContentForPrint() {
-    // Table of Contents
-    const tocComponent = document.querySelector('.hide-on-print')
-    // Hide the TOC
-    tocComponent!.classList.add('hide-on-print')
-
-    // Store the original classes of the author section
-    const authorSection = document.querySelector('.author')
-    const authorOriginalClasses: string = authorSection !== null ? authorSection.classList.value : ''
-    // Remove all classes of the author section
-    authorSection?.setAttribute('class', '')
-
-    const style = document.createElement('style')
-    style.textContent = `
-    @media print {
-      code[class*="language-"],
-      pre[class*="language-"] {
-        overflow: visible !important;
-        white-space: pre-wrap;
-      }
-    }
-  `
-    document.head.appendChild(style)
-
-    // Find all code and pre elements that need adjustments
-    const codeElements = document.querySelectorAll('code[class*="language-"]')
-    const preElements = document.querySelectorAll('pre[class*="language-"]')
-
-    // Apply the CSS class for printing adjustments
-    codeElements.forEach((codeElement) => {
-      codeElement.classList.add('print-adjusted')
-    })
-
-    preElements.forEach((preElement) => {
-      preElement.classList.add('print-adjusted')
-    })
-
-    // Call the print function
-    window.print()
-
-    // Show the TOC
-    tocComponent!.classList.remove('hide-on-print')
-
-    // Set back the original classes of auther section
-    authorSection?.setAttribute('class', authorOriginalClasses)
-
-    // Remove the CSS class and clean up the added style tag
-    codeElements.forEach((codeElement) => {
-      codeElement.classList.remove('print-adjusted')
-    })
-
-    preElements.forEach((preElement) => {
-      preElement.classList.remove('print-adjusted')
-    })
-
-    document.head.removeChild(style)
   }
 
   const injectStyle = () => {
@@ -187,7 +125,7 @@ export default function BlogLayout({
         <h1 className="text-center text-3xl font-bold tracking-tight text-black md:text-5xl dark:text-white mt-10">
           {blog.title}
         </h1>
-          
+
         <div className="!w-full text-gray-700 dark:text-gray-300">
           <div className="w-full">
             <div className={`${blogInfoFull ? 'fixed right-0 px-10 opacity-100 top-[50px] md:top-[80px] author' : ''}`}>

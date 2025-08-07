@@ -12,7 +12,7 @@ export default function AnimatedHeading({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: !infinity }}
-      variants={variants}
+      variants={variants as any}
       className={className}
     >
       {children}
