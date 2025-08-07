@@ -58,7 +58,10 @@ export default function CodeTitle({ title, lang }: Props) {
     case "vercel":
       Icon = SiVercel;
       break;
-    case "ts" || "tsx":
+    case "ts":
+      Icon = SiTypescript;
+      break;
+    case "tsx":
       Icon = SiTypescript;
       break;
     default:
